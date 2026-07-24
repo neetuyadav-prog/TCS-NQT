@@ -1,0 +1,13 @@
+# we take input as it is TCS FREE NQT Compiler, if you don't , you can use def function
+
+n = int(input())
+arr = list(map(int,input().split()))
+
+for i in range(n - 1):
+    min_index = i
+    for j in range(i + 1, n):  # this for loop write same indentation as it is upper min othewise error will be generated
+        if arr[j] < arr[min_index] : 
+            min_index = j
+        arr[i], arr[min_index] = arr[min_index] , arr[i]
+
+print(*arr)
