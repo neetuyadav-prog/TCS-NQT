@@ -1,0 +1,12 @@
+n = int(input())
+arr = list(map(int,input().split()))
+target = int(input())
+
+def linear_search(arr, target):
+    for i in range(n):
+        if arr[i] == target: 
+            print(i)
+            break
+    else:
+        print(-1)
+linear_search(arr, target)
