@@ -1,0 +1,14 @@
+n = int(input())
+arr = list(map(int,input().split()))
+
+slow = 0
+fast = 1
+
+while fast < n:
+    if arr[slow] != arr[fast]:
+        slow += 1
+        arr[slow] = arr[fast]
+    fast += 1
+
+for i in range(slow+1):
+    print(arr[i], end = " ")
