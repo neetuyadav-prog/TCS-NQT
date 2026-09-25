@@ -1,0 +1,12 @@
+# Average of all Element  in anArray
+# Average = Sum of all elements / Number of elements
+
+n = int(input())
+arr = list(map(int,input().split()))
+
+sum = 0
+for i in range(n):
+    sum += arr[i]
+
+avrage = sum / n
+print(avrage)
